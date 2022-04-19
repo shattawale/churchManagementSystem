@@ -17,7 +17,9 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/addMember.css" rel="stylesheet">
     
     </head>
     
@@ -53,60 +55,60 @@
 
            
 
-            <!-- Nav Item - Member Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Members</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Members:</h6>
-                        <a class="collapse-item" href="table.html">All Member</a>
-                        <a class="collapse-item" href="addMember.html">Add New Member</a>
-                      
-                    </div>
+           <!-- Nav Item - Member Collapse Menu -->
+           <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fa fa-users fa-cog"></i>
+                <span>Members</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Custom Members:</h6>
+                    <a class="collapse-item" href="table.html">All Member</a>
+                    <a class="collapse-item" href="addMember.html">Add New Member</a>
+                  
                 </div>
-            </li>
+            </div>
+        </li>
 
-            <!-- Nav Item - Event Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Events</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Events:</h6>
-                        <a class="collapse-item" href="weddingCeremony.html">Wedding Ceremony</a>
-                        <a class="collapse-item" href="namingCeremony.html">Naming Ceremony</a>
-                    </div>
+        <!-- Nav Item - Event Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                aria-expanded="true" aria-controls="collapseUtilities">
+                <i class="fa-eercast fa-wrench"></i>
+                <span>Events</span>
+            </a>
+            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Custom Events:</h6>
+                    <a class="collapse-item" href="weddingCeremony.html">Wedding Ceremony</a>
+                    <a class="collapse-item" href="namingCeremony.html">Naming Ceremony</a>
                 </div>
-            </li>
+            </div>
+        </li>
 
-             <!-- Nav Item - Born Babies -->
-             <li class="nav-item">
-                <a class="nav-link" href="bornBabies.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>New Born Babies</span></a>
-            </li>
+         <!-- Nav Item - Born Babies -->
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="bornBabies.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>New Born Babies</span></a>
+        </li> -->
 
-             <!-- Nav Item - Groups -->
-             <li class="nav-item">
-                <a class="nav-link" href="group.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Groups</span></a>
-            </li>
+         <!-- Nav Item - Groups -->
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="group.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Groups</span></a>
+        </li> -->
 
-            <!-- Nav Item - Attendance -->
-            <li class="nav-item">
-                <a class="nav-link" href="attendance.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Attendance</span></a>
-            </li>
+        <!-- Nav Item - Attendance -->
+        <li class="nav-item">
+            <a class="nav-link" href="attendance.html">
+                <i class="fa fa-check-square"></i>
+                <span>Attendance</span></a>
+        </li>
 
           
               <!-- Divider -->
@@ -360,7 +362,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Wedding Ceremony</h1>
+                        <h1 id="title">Wedding Ceremony</h1>
                     </div>
 
                     
@@ -390,24 +392,91 @@
  </div>
 </div>
 
+<div class="container-form">
+    <form>
+      <label for="groomName">Groom's Name</label>
+      <input type="text" id="groomName" placeholder="Groom's Name"> 
+
+      <label for="brideName">Bride's Name</label>
+      <input type="text" id="brideName" placeholder="Bride's Name">
+
+      <label for="dateMarriage">Date of Marriage</label>
+      <input type="date" id="dateMarriage" placeholder="Date of Marriage">
+
+      <label for="pastor1">Pastor 1</label>
+      <input type="text" id="pastor1" placeholder="Pastor 1">
+
+      <label for="pastor2">Pastor 2</label>
+      <input type="text" id="pastor2" placeholder="Pastor 2">
+
+      <label for="pastor3">Pastor 3</label>
+      <input type="text" id="pastor3" placeholder="Pastor 3">
+
+      <label for="groomWitness1">Groom's Witness 1</label>
+      <input type="text" id="groomWitness1" placeholder="Groom's Witness1"> 
+
+      <label for="groomWitness2">Groom's Witness 2</label>
+      <input type="text" id="groomWitness2" placeholder="Groom's Witness2"> 
+
+      <label for="brideWitness1">Bride's Witness 1</label>
+      <input type="text" id="brideWitness1" placeholder="Bride's Witness1"> 
+
+      <label for="brideWitness2">Bride's Witness 2</label>
+      <input type="text" id="brideWitness2" placeholder="Bride's Witness2"> 
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <br>
+
+  <div class="details">
+    <div class="recentOrders">
+        <table>
+           <thead>
+               <tr>
+                <td>Sr. No</td>
+                <td>Groom's Name</td>
+                <td>Bride's Name</td>
+                <td>Date of Marriage</td>
+                <td>Bride's Witness</td>
+                <td>Groom's Witness</td>
+                <td>Action</td>
+               </tr>
+           </thead>
+
+           <tbody id="items">
+               
+           </tbody>
+        </table>
+
+    </div>
+    
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+ <div class="container my-auto">
+     <div class="copyright text-center my-auto">
+         <span>Copyright &copy; ACCI-TAFO Website 2022 By Francis Adjei</span>
+     </div>
+ </div>
+</footer>
+<!-- End of Footer -->
+
+
 
 
      <!-- Bootstrap core JavaScript-->
-     <script src="vendor/jquery/jquery.min.js"></script>
-     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="vendor/jquery/jquery.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
  
-     <!-- Core plugin JavaScript-->
-     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
  
      <!-- Custom scripts for all pages-->
-     <script src="js/sb-admin-2.min.js"></script>
- 
-     <!-- Page level plugins -->
-     <script src="vendor/chart.js/Chart.min.js"></script>
- 
-     <!-- Page level custom scripts -->
-     <script src="js/demo/chart-area-demo.js"></script>
-     <script src="js/demo/chart-pie-demo.js"></script>
+     <script src="js/sb-admin-2.js"></script>
+
     
 </body>
 </html>
